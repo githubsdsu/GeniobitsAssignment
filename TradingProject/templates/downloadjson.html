@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment</title>
+        <body>
+            <!-- Download file by clicking this link -->
+            {% load static %}
+            <link rel="stylesheet" href="{% static 'downloadjson.css' %}">
+            <div class="downloadbutton">
+                <a href="{% static 'jsonfile/data.txt'%}" download>Click Here to Download</a>
+            </div>
+        </body>
+    </head>
+</html>

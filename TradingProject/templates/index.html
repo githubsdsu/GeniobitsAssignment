@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment</title>
+        <body>
+            {% load static %}
+            <link rel="stylesheet" href="{% static 'index.css' %}">
+            <!--Creating Input fro uploading data-->
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+            <div class="inputs">
+                <div class="timeframe">
+                    <input type="number" placeholder="Timeframe" name="timeframe" required>
+                </div> 
+                <br>
+                <div class="fileupload">
+                    <div class="csv_file_label">
+                    <label>CSV File</label>
+                </div>
+                    <br>
+                <div class="file_upload_button">
+                    <input type="file" name="csvfile">
+                </div>
+                <br>
+                <div class="upload">
+                    <input type="submit" name="submitbutton" value="Submit">
+                </div>
+             
+                </div>
+            </div>
+        </form>
+        </body>
+    </head>
+</html>
