@@ -118,7 +118,7 @@ def upload(request):
                   
                     anslist.append(dict1)    
                 
-                jsonfile=json.dumps(anslist)
+                jsonfile=json.dumps(anslist)#converting to json
                 jsonfilepath=r"D:/GeniobitsInternship/TradingProject/static/jsonfile" #storing json file inside a folder 
                 os.chdir(jsonfilepath)
                 #saving json file to directory
